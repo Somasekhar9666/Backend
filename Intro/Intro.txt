@@ -1,0 +1,10 @@
+Server : A computer which hosts the Application to run or keep it live for 24/7. 
+
+Application: Logic that runs on the Server.
+             
+             Determines that how the server responds to the requests comes from the Browser.
+
+             It can responds with HTML or Data or the Status Code. ex:404, 403, .....
+
+Database: stores the User Data.
+

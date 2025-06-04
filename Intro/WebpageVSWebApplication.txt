@@ -1,0 +1,160 @@
+🧠 Definition of Software
+            Software is a set of instructions, data, or programs used to operate computers and perform specific tasks.
+
+In simple words:
+            Software tells the computer what to do.
+            
+            It’s the opposite of hardware, which is the physical machine.
+
+
+
+
+🔧 Analogy: Software vs Hardware
+            Think of a computer like a human body:
+
+                    Concept	Analogy	What it Does
+                                
+                                Hardware	Body (hands, eyes, etc.)	Physical parts of the computer
+                                
+                                Software	Brain/thoughts/instructions	Tells the hardware what to do
+
+                    
+                    *Without software, hardware is useless — like a robot with no brain.
+
+
+
+🧩 Types of Software
+
+1.System Software
+
+        Helps the computer run
+
+        Examples:
+
+            Operating Systems (Windows, Linux, macOS)
+
+            Device Drivers
+
+            Utilities (Disk Cleanup, Antivirus)
+
+
+
+2.Application Software
+
+        Helps users perform tasks
+
+        Examples:
+
+                Microsoft Word (writing)
+
+                Photoshop (editing)
+
+                Chrome (browsing)
+
+
+
+3.Programming Software
+
+        Used by developers to write other software
+
+        Examples:
+
+                Visual Studio Code
+
+                Compilers (GCC, javac)
+
+                Debuggers
+
+
+
+
+4.Middleware
+
+            Connects different software systems together
+
+            Often used in enterprise systems (like banks, cloud apps)
+
+
+
+
+
+
+
+
+
+
+
+2. What is an "Application" in Software?
+Definition:
+            A software application (or just app) is a program or group of programs designed to perform specific tasks for a user.
+
+    It is called an "application" because it applies "computing power" to perform a task or solve a problem for the user.
+
+
+
+Why It's Called an Application
+            It’s called an application because it’s a tool applied by the user to do something specific — just like a screwdriver is applied to turn screws, an app is applied to complete tasks.
+
+
+
+🧠 In Simple Terms:
+            A tool you use to do something specific on a computer or phone = Application
+
+            It's called that because you are "applying" the software to solve a problem
+
+
+
+
+
+The difference between a web page and a web application mainly comes down to complexity, interactivity, and functionality.
+
+✅ Web Page:
+        Definition: A single document or screen that is part of a website, typically displaying static content.
+
+        Purpose: Mostly for information display (e.g., news, articles, about us pages).
+
+        Interactivity: Very limited; users mostly read content.
+
+        Examples:
+
+                    A blog post
+
+                    A contact page
+
+                    A product detail page
+
+
+
+✅ Web Application:
+
+        Definition: A software program that runs in a web browser and allows user interaction and data processing.
+
+        Purpose: To perform tasks, process data, and provide services to users.
+
+        Interactivity: High; users can input data, get dynamic responses, etc.
+
+        Examples:
+
+                    Gmail
+
+                    Facebook
+
+                    Online banking systems
+
+                    Google Docs
+
+
+
+
+
+COMPUTER SYSTEM
+├── Hardware
+└── Software
+    ├── System Software
+    ├── Programming Software
+    └── Application Software
+        ├── Desktop Application
+        ├── Mobile Application
+        └── Web Application
+            ├── Web Pages
+            └── Programs (Frontend + Backend)
