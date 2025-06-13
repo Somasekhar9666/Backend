@@ -1,0 +1,80 @@
+🧠 Meaning of "Persistence" (in general)
+✅ In General English:
+        Persistence means:
+
+                            "Continuing to exist or continuing to do something even when it is difficult or after a long time."
+
+                            It's about not giving up or lasting over time.
+
+
+
+
+💻 In Computing / Software:
+                            In programming, persistence means:
+
+                                                    "The ability of data to stay available even after the program stops running."
+
+🔁 In simple words:
+                            Data that doesn't disappear when the app is closed or the computer restarts.
+
+📦 Example:
+            If your blog app stores posts in RAM only:
+
+                            Data is not persistent
+
+                            It vanishes on server restart
+
+                            But if you store the posts in a file or database:
+
+                            Data is persistent
+
+                            It stays saved even after a restart
+
+
+
+
+🔡 Telugu Meaning:
+                Persistence (general meaning):
+                    🔸 స్థిరత్వం (Stiratvam)
+                    🔸 దృఢ సంకల్పం (Drudha Sankalpam – for human behavior)
+
+
+Persistence (in computing context):
+                                    🔸 స్థిరమైన డేటా నిల్వ
+                                    (Sthiramaina Data Nilva – meaning "data that stays safely stored")
+
+
+
+
+
+🧪 Without Persistence:
+
+        let names = ["Ravi"];
+
+        names.push("Raju");
+
+// Restart program: names = ["Ravi"] again
+  
+→ "Raju" is lost after restart because it was only in memory.
+
+
+
+💾 With Persistence (Example with File):
+
+        let names = JSON.parse(fs.readFileSync("names.json"));
+
+        names.push("Raju");
+
+        fs.writeFileSync("names.json", JSON.stringify(names));
+
+        → Now even after restarting, "Raju" is still saved in names.json
+
+
+
+🧠 Real Life Analogy:
+                            Situation	                    Persistent?	                                Why?
+                        Writing on a whiteboard	            ❌ No	                          Erased when wiped (like RAM)
+                        
+                        Saving in a notebook	            ✅ Yes	                          Stays even after class ends (like database/file)
+
+

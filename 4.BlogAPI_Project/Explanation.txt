@@ -1,0 +1,128 @@
+🧩 FILE-BY-FILE EXPLANATION
+✅ 1. server.js (Client-Facing Server – Port 3000)
+Purpose:
+This is the main web server that:
+
+Serves HTML pages using EJS
+
+Takes user input from forms
+
+Communicates with the backend API (in solution.js) using HTTP requests
+
+Key actions:
+
+Renders home page (index.ejs) with posts list
+
+Renders "New Post" or "Edit Post" form (modify.ejs)
+
+Sends form data to backend (API server)
+
+Handles create, update, and delete actions via API
+
+✅ 2. solution.js (API Backend – Port 4000)
+Purpose:
+Acts as the API service for storing and managing posts in memory (simulates a database).
+
+Features:
+
+GET /posts → get all posts
+
+GET /posts/:id → get a specific post
+
+POST /posts → create a new post
+
+PATCH /posts/:id → update specific fields
+
+DELETE /posts/:id → delete a post
+
+✅ 3. index.ejs (Home Page View)
+Purpose:
+This EJS template renders the list of all blog posts.
+
+Used by:
+server.js when you visit /
+
+Includes:
+
+Loop to display all posts
+
+"Edit" and "Delete" buttons
+
+"New Post" button (link to /new)
+
+✅ 4. modify.ejs (Form Page for New/Edit)
+Purpose:
+A reusable form for creating or editing a blog post.
+
+Used by:
+
+/new → empty form (new post)
+
+/edit/:id → pre-filled form (edit existing post)
+
+Smart logic:
+
+Checks if a post object exists (i.e., locals.post)
+
+If yes → edit form
+
+If no → new form
+
+🔁 FULL FLOW EXPLAINED (Step-by-Step)
+🔸 1. Show All Posts
+Browser requests http://localhost:3000/
+
+server.js fetches all posts from API (solution.js on port 4000)
+
+Renders index.ejs with data
+
+🔸 2. Create New Post
+Click “New Post” → goes to /new
+
+Renders modify.ejs with empty form
+
+On form submit → POST request to /api/posts
+
+server.js sends data to API → solution.js adds it
+
+Redirects back to / showing updated list
+
+🔸 3. Edit Existing Post
+Click “Edit” → goes to /edit/:id
+
+server.js fetches post details → sends to modify.ejs with data
+
+On submit → POST (using PATCH internally) to /api/posts/:id
+
+API updates the record
+
+Redirects back to home
+
+🔸 4. Delete a Post
+Click “Delete” → sends GET request to /api/posts/delete/:id
+
+server.js sends DELETE request to API
+
+Post is deleted
+
+Redirects to /
+
+🔗 Summary Diagram
+pgsql
+Copy
+Edit
+Browser
+   ↓          ↑
+server.js (Port 3000) ←→ modify.ejs / index.ejs
+   ↓          ↑
+REST API (solution.js on Port 4000)
+   ↓
+In-memory posts data (array)
+🧠 Final Thoughts
+server.js is your client-facing server
+
+solution.js is your data-handling API
+
+EJS files render dynamic HTML
+
+Communication between servers is done using axios
